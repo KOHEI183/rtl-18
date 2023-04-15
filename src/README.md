@@ -2,11 +2,14 @@
 
 | 関数                                                   | 役割                                                                            | 備考                                                                   |
 | ------------------------------------------------------ | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| 非同期系は get を find に変更                          | 4 秒待っても非同期の結果が反映されるまで待ってくれる                            | testingLibrary の timeout が 4 秒くらい                                |
 | getByRole(“ロール名”)                                  | 単一対象の存在確認                                                              | [ロール一覧](https://github.com/A11yance/aria-query#elements-to-roles) |
 | getAllByRole(“ロール名”)                               | 全ての要素を配列で返してくれます。具体的な要素を取得したい場合は[0]等により参照 | [ロール一覧](https://github.com/A11yance/aria-query#elements-to-roles) |
 | getByPlaceholderText(“プレースホルダーで設定した名前”) | プレースホルダーで設定した名前の検証                                            |                                                                        |
 | getByText(“テキスト名”)                                | HTML 要素内のテキスト内容を探索。戻り値としては、該当する文字列とタグ           |
 | queryByText(“テキスト名”)                              |                                                                                 | getByText と違い、該当しない場合は null を返してくれます               |
+|                                                        |                                                                                 |                                                                        |
+|                                                        |                                                                                 |                                                                        |
 |                                                        |                                                                                 |                                                                        |
 
 ### マッチャー
@@ -34,3 +37,4 @@
 | expect(A).toMatch(B)                | A が B の正規表現にマッチしているこ                                  |                                 |
 | expect(A).toThrow(B)                | A が（B という）例外を投げること                                     |                                 |
 | expect(A).toThrowError(B, C)        | A が（B というエラー名で）（C というメッセージ）のエラーを投げること |                                 |
+| expect(A).toBeInTheDocument(B)      | A が document 内に存在するのか                                       |
