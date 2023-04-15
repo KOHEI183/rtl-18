@@ -7,6 +7,9 @@ import { configureStore } from "@reduxjs/toolkit";
 import customCounterReducer from "../src/features/customCounter/customCounterSlice";
 import ReduxAsync from "./ReduxAsync";
 
+/**
+ * apiなしの非同期処理
+ */
 describe("ReduxAsync test", () => {
   let store;
   beforeEach(() => {
@@ -16,7 +19,7 @@ describe("ReduxAsync test", () => {
       },
     });
   });
-  it("Should display value with 100 + payload", async () => {
+  it("100+ペイロードの値を表示すること", async () => {
     render(
       <Provider store={store}>
         <ReduxAsync />
