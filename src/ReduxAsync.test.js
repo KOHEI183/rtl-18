@@ -13,8 +13,10 @@ import ReduxAsync from "./ReduxAsync";
 describe("ReduxAsync test", () => {
   let store;
   beforeEach(() => {
+    // test用でもreduxを再現するため/app/store.jsの7行目と同じことをしている
     store = configureStore({
       reducer: {
+        // customCounterとしてtest用のreducerを登録する、sliceファイルのnameと一致させる
         customCounter: customCounterReducer,
       },
     });
