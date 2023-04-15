@@ -88,5 +88,5 @@ export const { increment, decrement, incrementByAmount } =
 // useSelecterを使用してreduxの値を直接参照できる
 export const selectCount = (state) => state.customCounter.value;
 export const selectUsername = (state) => state.customCounter.username;
-// ファイルのエクスポート
+// reducerの部分をexport
 export default customCounterSlice.reducer;
