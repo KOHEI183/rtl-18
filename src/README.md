@@ -38,3 +38,7 @@
 | expect(A).toThrow(B)                | A が（B という）例外を投げること                                     |                                 |
 | expect(A).toThrowError(B, C)        | A が（B というエラー名で）（C というメッセージ）のエラーを投げること |                                 |
 | expect(A).toBeInTheDocument(B)      | A が document 内に存在するのか                                       |
+
+## Redux Tool Kit
+
+<img width="1421" alt="スクリーンショット 2023-04-15 15 24 17" src="https://user-images.githubusercontent.com/55649762/232190498-92c82b66-f3e2-460d-bf58-024f289a1cea.png">
