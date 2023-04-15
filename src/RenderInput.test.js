@@ -36,7 +36,7 @@ describe("inputのonChangeイベント", () => {
 describe("consoleボタン", () => {
   it("input要素の値がない場合outputConsoleは呼び出されないこと", async () => {
     /**
-     * mock関数の定義。何かをする処理は記載していないが関数を定義しておく
+     * mock関数の定義。何かをする処理は記載していないが関数を定義しておく、関数として呼び出されるか呼び出されないか
      */
     const outputConsole = jest.fn();
     render(<RenderInput outputConsole={outputConsole} />);
@@ -44,6 +44,7 @@ describe("consoleボタン", () => {
 
     /**
      * toHaveBeenCalled：propsで渡される関数が呼び出されるかのcheck
+     * not.toHaveBeenCalled()propsで渡される関数が呼び出されないかのcheck
      */
     expect(outputConsole).not.toHaveBeenCalled();
   });
