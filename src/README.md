@@ -42,3 +42,8 @@
 ## Redux Tool Kit
 
 <img width="1421" alt="スクリーンショット 2023-04-15 15 24 17" src="https://user-images.githubusercontent.com/55649762/232190498-92c82b66-f3e2-460d-bf58-024f289a1cea.png">
+
+## 参考
+
+[github](https://github.com/GomaGoma676/react-testing-library-lesson-react18)
+[udemy](https://www.udemy.com/course/reacthooksreduxtoolkit/)
