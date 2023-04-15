@@ -12,6 +12,7 @@ export const fetchDummy = createAsyncThunk("fetch/dummy", async (num) => {
   return num;
 });
 
+// 実行後extraReducersに映る
 export const fetchJSON = createAsyncThunk("fetch/api", async () => {
   const res = await axios.get("https://jsonplaceholder.typicode.com/users/1");
   const { username } = res.data;
@@ -64,6 +65,7 @@ export const customCounterSlice = createSlice({
   },
   // 非同期関数を扱う場合のreducers
   extraReducers: (builder) => {
+    console.log(builder, "builder");
     // fetchが成功
     builder.addCase(fetchDummy.fulfilled, (state, action) => {
       state.value = 100 + action.payload;
