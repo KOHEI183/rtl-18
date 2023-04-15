@@ -20,5 +20,14 @@ describe("プロップを使ったリストのレンダリング", () => {
       { id: 3, item: "Vue dummy" },
     ];
     render(<FrameworkList frameworks={dummyData} />);
+    /**
+     * 要素を取得して各リストの中からテキストだけを抽出して配列にする
+     */
+    const frameworkItems = screen
+      .getAllByRole("listitem")
+      .map((ele) => ele.textContent);
+    const dummyItems = dummyData.map((ele) => ele.item);
+    expect(frameworkItems).toEqual(dummyItems);
+    expect(screen.queryByText("No data !")).toBeNull();
   });
 });
