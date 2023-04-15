@@ -28,6 +28,7 @@ describe("inputのonChangeイベント", () => {
     await userEvent.type(inputValue, "test");
     /**
      * waitFor：引数に渡したコールバックが期待する結果になるまで何度も実行
+     * toBe：取得したいものに指定の値setされているのか
      */
     await waitFor(() => expect(inputValue.value).toBe("test"));
   });
