@@ -1,12 +1,12 @@
 ### 取得関数
 
-| 関数                      | 役割                           | 備考 |
-| ------------------------- | ------------------------------ | ---- |
-| getByRole()               | 単一対象の存在確認             |      |
-| getAllByRole（HTML タグ） | ページ内の HTML タグの配列取得 |      |
-| getByPlaceholderText（）  | プレスフォルダーの確認         |      |
-|                           |                                |      |
-|                           |                                |      |
+| 関数                     | 役割                           | 備考                                                                   |
+| ------------------------ | ------------------------------ | ---------------------------------------------------------------------- |
+| getByRole()              | 単一対象の存在確認             | [ロール一覧](https://github.com/A11yance/aria-query#elements-to-roles) |
+| getAllByRole（）         | ページ内の HTML タグの配列取得 | [ロール一覧](https://github.com/A11yance/aria-query#elements-to-roles) |
+| getByPlaceholderText（） | プレスフォルダーの確認         |                                                                        |
+|                          |                                |                                                                        |
+|                          |                                |                                                                        |
 
 ### 評価関数
 
